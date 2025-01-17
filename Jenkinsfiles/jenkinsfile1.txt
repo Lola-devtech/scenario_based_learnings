@@ -14,7 +14,7 @@ pipeline {
         
         stage('Deploy with Rollback') {
             steps {
-                sh "./Shell\ Scripts/1-deploy.sh --rollback-on-failure"
+                sh "./Shell Scripts/1-deploy.sh --rollback-on-failure"
             }
         }
     }
