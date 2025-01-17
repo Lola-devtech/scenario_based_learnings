@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Lola-devtech/scenario_based_learnings.git'
+                gitCheckout(
+                branch: "main",
+                url: "https://github.com/Lola-devtech/scenario_based_learnings.git"
+                )
             }
         }
         
